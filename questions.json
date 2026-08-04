@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Quem disse: \"Faça ou não faça. Não existe tentativa.\"?",
+    "options": ["Luke Skywalker", "Obi-Wan Kenobi", "Mestre Yoda", "Darth Vader"],
+    "correctAnswer": "Mestre Yoda"
+  },
+  {
+    "question": "Quem disse: \"Prepara que agora é hora do show das poderosas\"?",
+    "options": ["Ludmilla", "Anitta", "Iza", "Lexa"],
+    "correctAnswer": "Anitta"
+  },
+  {
+    "question": "Quem disse: \"Eu sou inevitável.\"?",
+    "options": ["Ultron", "Loki", "Thanos", "Homem de Ferro"],
+    "correctAnswer": "Thanos"
+  },
+  {
+    "question": "Quem disse: \"No que diz respeito ao empenho, ao compromisso, ao esforço, à dedicação, não existe meio-termo.\"?",
+    "options": ["Pelé", "Ayrton Senna", "Michael Schumacher", "Nelson Piquet"],
+    "correctAnswer": "Ayrton Senna"
+  },
+  {
+    "question": "Quem disse: \"A liberdade, Sancho, é um dos mais preciosos dons que os céus deram aos homens.\"?",
+    "options": ["Sancho Pança", "Dom Quixote", "O Cura", "Cavaleiro da Branca Lua"],
+    "correctAnswer": "Dom Quixote"
+  },
+  {
+    "question": "Quem disse: \"Ao infinito e além!\"?",
+    "options": ["Woody", "Buzz Lightyear", "Zurg", "Sr. Cabeça de Batata"],
+    "correctAnswer": "Buzz Lightyear"
+  },
+  {
+    "question": "Quem disse: \"Quando eu digo que não quero mais você, é porque eu te quero\"?",
+    "options": ["Zezé Di Camargo & Luciano", "Chitãozinho & Xororó", "Leandro & Leonardo", "Bruno & Marrone"],
+    "correctAnswer": "Chitãozinho & Xororó"
+  },
+  {
+    "question": "Quem disse: \"Inovação distingue um líder de um seguidor.\"?",
+    "options": ["Bill Gates", "Elon Musk", "Steve Jobs", "Mark Zuckerberg"],
+    "correctAnswer": "Steve Jobs"
+  },
+  {
+    "question": "Quem disse: \"Baby, I'm just gonna shake, shake, shake, shake, shake\"?",
+    "options": ["Katy Perry", "Rihanna", "Lady Gaga", "Taylor Swift"],
+    "correctAnswer": "Taylor Swift"
+  },
+  {
+    "question": "Quem disse: \"Quando você elimina o impossível, o que resta, por mais improvável que pareça, deve ser a verdade.\"?",
+    "options": ["Hercule Poirot", "Sherlock Holmes", "Dr. Watson", "Arsène Lupin"],
+    "correctAnswer": "Sherlock Holmes"
+  }
+]
