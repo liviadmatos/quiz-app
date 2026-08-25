@@ -91,9 +91,7 @@ export default function QuizScreen({
   );
 
   return (
-    <Animated.View
-      style={[styles.container, { transform: [{ translateX: shakeAnim }] }]}
-    >
+    <View style={styles.container}>
       <View style={styles.decorCircleOne} />
       <View style={styles.decorCircleTwo} />
       <View style={styles.decorCircleThree} />
@@ -133,25 +131,29 @@ export default function QuizScreen({
         </View>
       </View>
 
-      <View style={styles.questionContainer}>
-        <Text style={styles.questionLabel}>Pergunta</Text>
-        <Text style={styles.questionText}>{currentQuestion.question}</Text>
-      </View>
+      <Animated.View
+        style={[styles.playArea, { transform: [{ translateX: shakeAnim }] }]}
+      >
+        <View style={styles.questionContainer}>
+          <Text style={styles.questionLabel}>Pergunta</Text>
+          <Text style={styles.questionText}>{currentQuestion.question}</Text>
+        </View>
 
-      <View style={styles.optionsContainer}>
-        {currentQuestion.options.map((option) => (
-          <TouchableOpacity
-            key={option}
-            style={[styles.option, getOptionStyle(option)]}
-            onPress={() => onOptionPress(option)}
-            disabled={isOptionsDisabled}
-            activeOpacity={0.85}
-          >
-            <Text style={styles.optionText}>{option}</Text>
-          </TouchableOpacity>
-        ))}
-      </View>
-    </Animated.View>
+        <View style={styles.optionsContainer}>
+          {currentQuestion.options.map((option) => (
+            <TouchableOpacity
+              key={option}
+              style={[styles.option, getOptionStyle(option)]}
+              onPress={() => onOptionPress(option)}
+              disabled={isOptionsDisabled}
+              activeOpacity={0.85}
+            >
+              <Text style={styles.optionText}>{option}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+      </Animated.View>
+    </View>
   );
 }
 
@@ -257,6 +259,10 @@ const styles = StyleSheet.create({
     color: "#111827",
     fontWeight: "900",
     fontSize: 13,
+  },
+  playArea: {
+    width: "100%",
+    zIndex: 1,
   },
   questionContainer: {
     backgroundColor: "rgba(15, 23, 42, 0.78)",
