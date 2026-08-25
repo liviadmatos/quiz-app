@@ -1,50 +1,111 @@
-# Welcome to your Expo app 👋
+# Quiz App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo de quiz em React Native com Expo, com sistema de pontuação, vidas e tela de resultado.
 
-## Get started
+## Visão geral
 
-1. Install dependencies
+Este projeto é um quiz interativo com:
 
-   ```bash
-   npm install
-   ```
+- perguntas em sequência
+- 3 vidas por partida
+- pontuação acumulada
+- feedback visual de resposta correta ou incorreta
+- reinício automático ao perder todas as vidas
+- tela de resultado final
+- visual moderno com estilo gamer
 
-2. Start the app
+## Tecnologias
 
-   ```bash
-   npx expo start
-   ```
+- React Native
+- Expo
+- TypeScript
 
-In the output, you'll find options to open the app in a
+## Requisitos
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Antes de rodar o projeto, verifique se você possui:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Node.js instalado
+- Expo CLI ou suporte ao comando `npx expo`
+- emulador Android/iOS ou dispositivo físico com Expo Go
 
-## Get a fresh project
+## Instalação
 
-When you're ready, run:
+1. Abra o terminal na pasta do projeto
+2. Instale as dependências:
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Execução
 
-## Learn more
+Para iniciar o app:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Depois, escolha uma opção:
 
-## Join the community
+- Android
+- iOS
+- Web
+- ou use o QR Code no Expo Go
 
-Join our community of developers creating universal apps.
+## Estrutura principal
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+quiz-app/
+├── app/
+│   ├── _layout.tsx
+│   └── index.tsx
+├── components/
+│   ├── QuizScreen.tsx
+│   ├── ResultScreen.tsx
+│   ├── ExemploComUseState.tsx
+│   └── ExemploSemUseState.tsx
+├── questions.json
+├── app.json
+├── package.json
+├── tsconfig.json
+├── eslint.config.js
+├── expo-env.d.ts
+├── README.md
+└── AGENTS.md
+```
+
+## Personalização
+
+Você pode alterar as perguntas no arquivo:
+
+```bash
+questions.json
+```
+
+Cada pergunta possui:
+
+- `question`: texto da pergunta
+- `options`: opções de resposta
+- `correctAnswer`: resposta correta
+
+## Como funciona a lógica
+
+- o jogador escolhe uma alternativa
+- se acertar, ganha 1 ponto
+- se errar, perde uma vida
+- ao errar 3 vezes, o jogador perde todas as vidas e reinicia
+- após 2 segundos, a próxima pergunta é exibida automaticamente
+
+## Observações
+
+Este projeto foi desenvolvido como exemplo de quiz em React Native com Expo e pode ser expandido com:
+
+- sons
+- animações extras
+- ranking
+- persistência de pontuação
+- múltiplos níveis ou temas
+
+## Licença
+
+Este projeto foi criado para fins de estudo e demonstração.

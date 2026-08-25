@@ -29,21 +29,25 @@
     "options": ["Woody", "Buzz Lightyear", "Zurg", "Sr. Cabeça de Batata"],
     "correctAnswer": "Buzz Lightyear"
   },
+  
   {
     "question": "Quem disse: \"Quando eu digo que não quero mais você, é porque eu te quero\"?",
     "options": ["Zezé Di Camargo & Luciano", "Chitãozinho & Xororó", "Leandro & Leonardo", "Bruno & Marrone"],
     "correctAnswer": "Chitãozinho & Xororó"
   },
+
   {
     "question": "Quem disse: \"Inovação distingue um líder de um seguidor.\"?",
     "options": ["Bill Gates", "Elon Musk", "Steve Jobs", "Mark Zuckerberg"],
     "correctAnswer": "Steve Jobs"
   },
+
   {
     "question": "Quem disse: \"Baby, I'm just gonna shake, shake, shake, shake, shake\"?",
     "options": ["Katy Perry", "Rihanna", "Lady Gaga", "Taylor Swift"],
     "correctAnswer": "Taylor Swift"
   },
+
   {
     "question": "Quem disse: \"Quando você elimina o impossível, o que resta, por mais improvável que pareça, deve ser a verdade.\"?",
     "options": ["Hercule Poirot", "Sherlock Holmes", "Dr. Watson", "Arsène Lupin"],
